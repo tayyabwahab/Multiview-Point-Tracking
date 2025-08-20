@@ -1,4 +1,4 @@
-# Multi-View Point Tracking (OBTracer)
+# Multi-View Point Tracking
 
 A sophisticated Microsoft Foundation Classes (MFC) C++ application designed for **multi-view point object tracking** in surveillance systems. The project was developed to track objects (humans and vehicles) across multiple viewpoints using a dome camera that covers 4 distinct view points.
 
@@ -94,14 +94,8 @@ Depending on configuration, you may need to link against:
    - Additional Dependencies: `winmm.lib; vfw32.lib;` (and any others required by your setup)
 5. Build the solution (Build > Build Solution).
 
-## Running
-- After a successful build, run the generated executable from Visual Studio or the `Debug`/`Release` output folder.
-- The application presents a dialog UI with controls for starting/stopping processing and display modes (1/4/9 views), and supports loading video files.
 
 ## Notes
 - This project uses precompiled headers (`stdafx.h`/`StdAfx.h`). Ensure PCH settings are enabled in project properties if you upgrade the toolset.
 - Some strings and APIs are ANSI-based; you may need to set the character set to Multi-Byte in Project Properties if Unicode issues arise.
 - The original `ReadMe.txt` is the default AppWizard summary and is included for historical context.
-
-## Linux/macOS
-This code depends on MFC and Windows-specific APIs (VfW, WinMM) and is not portable to Linux or macOS without significant refactoring. 
